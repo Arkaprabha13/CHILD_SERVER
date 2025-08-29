@@ -1,4 +1,4 @@
-# FastAPI Framework and Server
+# FastAPI Framework (no Rust dependencies)
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 
@@ -10,9 +10,9 @@ pymongo==4.6.0
 python-multipart==0.0.6
 aiofiles==23.2.0
 
-# Environment Configuration
+# Environment Configuration  
 python-dotenv==1.0.0
 
-# Core Dependencies (auto-installed but good to specify)
+# Core Dependencies (pure Python)
 pydantic==2.5.0
 starlette==0.27.0
