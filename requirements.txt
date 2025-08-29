@@ -1,0 +1,18 @@
+# FastAPI Framework and Server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# MongoDB Database
+motor==3.3.2
+pymongo==4.6.0
+
+# File Upload Support
+python-multipart==0.0.6
+aiofiles==23.2.0
+
+# Environment Configuration
+python-dotenv==1.0.0
+
+# Core Dependencies (auto-installed but good to specify)
+pydantic==2.5.0
+starlette==0.27.0
