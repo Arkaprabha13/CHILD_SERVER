@@ -1,0 +1,76 @@
+<!-- static/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Share Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-upload-alt"></i> File Share Platform</h1>
+            <p>Upload files and share with generated codes</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <h3>Drag & Drop Files Here</h3>
+                        <p>or <span class="browse-link">browse files</span></p>
+                        <input type="file" id="fileInput" multiple hidden>
+                    </div>
+                </div>
+                
+                <div class="file-info" id="fileInfo" style="display: none;">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <div class="file-details" id="fileDetails"></div>
+                </div>
+
+                <div class="upload-result" id="uploadResult" style="display: none;">
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Upload Successful!</h3>
+                        <div class="download-code">
+                            <label>Download Code:</label>
+                            <div class="code-display">
+                                <span id="downloadCode"></span>
+                                <button class="copy-btn" id="copyBtn">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="new-upload-btn" id="newUploadBtn">Upload Another File</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <section class="download-section">
+                <h2><i class="fas fa-download"></i> Download Files</h2>
+                <div class="code-input-container">
+                    <input type="text" id="codeInput" placeholder="Enter download code" maxlength="8">
+                    <button id="previewBtn">Preview</button>
+                    <button id="downloadBtn">Download</button>
+                </div>
+
+                <div class="file-preview" id="filePreview" style="display: none;">
+                    <div class="preview-header">
+                        <h3>File Preview</h3>
+                    </div>
+                    <div class="preview-content" id="previewContent"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
