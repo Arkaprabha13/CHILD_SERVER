@@ -1,18 +1,31 @@
 # FastAPI Framework (no Rust dependencies)
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
+#fastapi==0.104.1
+#uvicorn[standard]==0.24.0
 
 # MongoDB Database
-motor==3.3.2
-pymongo==4.6.0
+#motor==3.3.2
+#pymongo==4.6.0
 
 # File Upload Support
-python-multipart==0.0.6
-aiofiles==23.2.0
+#python-multipart==0.0.6
+#aiofiles==23.2.0
 
 # Environment Configuration  
-python-dotenv==1.0.0
+#python-dotenv==1.0.0
 
 # Core Dependencies (pure Python)
-pydantic==2.5.0
-starlette==0.27.0
+#pydantic==2.5.0
+#starlette==0.27.0
+
+#streamlit
+# Streamlit Framework
+streamlit==1.28.0
+
+# MongoDB Database
+pymongo==4.6.0
+
+# Environment Configuration
+python-dotenv==1.0.0
+
+# Core Dependencies
+bson==0.5.10
